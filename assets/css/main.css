@@ -1,0 +1,17 @@
+/* Main CSS files for Clouds and Spaceships */
+body {
+    background-color: #49393B;
+    color: #ffffff ;
+}
+
+h1, h2 {
+    font-family:"Copperplat", fantasy, serif;
+}
+
+body > p {
+    font-family: "lora", serif;
+}
+
+.story-snippet{
+    background-color: #d95d39;
+}
