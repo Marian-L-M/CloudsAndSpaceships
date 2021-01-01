@@ -30,3 +30,20 @@ font-family: 'Redressed', cursive;
 Logo built using the cottony cloud template.
 
 ----------------------------------------------------------------------------------------------------------------------------------
+4. Stock Images
+
+@Pixabay.com
+- Golden Route, original image by Jonas_Fehre - Ireland National Park Connemara
+https://pixabay.com/photos/ireland-national-park-connemara-1971997/
+
+- The Franksten Divide, original image by JCK5D - Planet Sience Fiction Fantasy
+https://pixabay.com/illustrations/planet-sience-fiction-fantasy-world-1702788/
+
+- Draconian Gate, original image by Kellepics - Fantasy Cave Mystical
+https://pixabay.com/photos/fantasy-cave-mystical-rock-stone-2750995/
+
+- Roselin Forest, original image by Free-Photos - Forest Mist Nature
+https://pixabay.com/photos/forest-mist-nature-trees-mystic-931706/
+
+@Pexels.com
+@Unsplash.com
