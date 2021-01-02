@@ -1,17 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+
 /* Main CSS files for Clouds and Spaceships */
+html {
+    font-size: 100%;
+}
+
 body {
     background-color: #49393B;
     color: #ffffff ;
 }
 
+
 h1, h2 {
     font-family:"Copperplat", fantasy, serif;
 }
 
-body > p {
-    font-family: "lora", serif;
+h1 {
+    font-size: 2.25rem;
 }
 
+p {
+    font-family: "Lora", serif;
+}
+/* Story Snippets */
 .story-snippet{
     background-color: #d95d39;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    width: 300px;
+    border: 2px groove #F0A202;
+    border-radius: 2%;
+}
+
+.story-snippet h2 {
+    background-color: rgb(146, 85, 5);
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    border: 1px outset #F0A202;
+    border-radius: 2%;
 }
