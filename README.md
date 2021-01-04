@@ -47,3 +47,17 @@ https://pixabay.com/photos/forest-mist-nature-trees-mystic-931706/
 
 @Pexels.com
 @Unsplash.com
+
+----------------------------------------------------------------------------------------------------------------------------------
+5. Icons
+@fontawesome.com
+
+----------------------------------------------------------------------------------------------------------------------------------
+6. Videos
+
+@Pixabay
+-landing page: Forest https://pixabay.com/videos/forest-gloomy-dark-nature-fog-17844/
+by user: Louis de Funes
+https://pixabay.com/users/louis-de-funes-9076487/?tab=videos
+
+@Pexels

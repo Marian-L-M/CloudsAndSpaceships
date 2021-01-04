@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
 
 /* Main CSS files for Clouds and Spaceships */
+/* Written using Mobile-Frist approach */
+
+/* For mobile*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
 html {
     font-size: 100%;
 }
@@ -8,6 +17,7 @@ html {
 body {
     background-color: #49393B;
     color: #ffffff ;
+    font-family: "Lora", serif;
 }
 
 
@@ -15,21 +25,77 @@ h1, h2 {
     font-family:"Copperplat", fantasy, serif;
 }
 
-h1 {
-    font-size: 2.25rem;
+section{
+    padding: 1vh 1vh 0 1vh;
 }
 
-p {
-    font-family: "Lora", serif;
+
+/* Header */
+
+header {
+    height: 30vh;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-/* Story Snippets */
+
+.main-video {
+    width: 100%;
+    position: absolute;
+    z-index: -100;
+    display: flex;
+    align-self: flex-start;
+}
+
+h1 {
+font-size: 5vw;
+}
+
+/* Contents */
+.info-text {
+
+}
+
+/* Story Lines*/
+.container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto;
+    grid-gap: 3vh;
+    /* padding-top: 10vh;
+    padding-left: 100px; */
+    padding: 5vh 1vh 0 1vh;
+}
+
 .story-snippet{
     background-color: #d95d39;
     padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-    width: 300px;
     border: 2px groove #F0A202;
     border-radius: 2%;
+    width: 100%;
 }
+
+.story-snippet > p {
+    display: flex;
+    align-content: center;
+}
+
+.story-snippet:hover {
+    background-color: #be4d2e;
+    
+}
+
+/* .story-snippet:first-child{} */
+/* .story-snippet:last-child{} */
+
+/* .story-snippet::after {
+    content: 'Thank you for reading!';
+    font-size: 2em;
+    font-weight: 300;
+} */
+
 
 .story-snippet h2 {
     background-color: rgb(146, 85, 5);
@@ -37,3 +103,74 @@ p {
     border: 1px outset #F0A202;
     border-radius: 2%;
 }
+
+.story-snippet p {
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+}
+
+.story-snippet p::first-line {
+    font-size: 1.2rem;
+    color: #341C1C;
+}
+.story-snippet p::first-letter {
+    font-family: 'MedievalSharp', cursive;
+    font-size: 2rem;
+}
+
+
+
+/* Tablet/HD version*/
+
+/* Header */
+@media only screen and (min-width: 800px) {
+    header {
+        height: 65vh;
+    }
+    
+    section {
+        padding-top: 5vh;
+    }
+/* Navbar */
+    #logo img {
+        width: 40px;
+    }
+
+    nav {
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 100;
+        margin: 0 0;
+        background-color: #151d0d;
+    }
+
+/* Contents */
+    .container {
+        grid-template-columns: auto auto auto;
+        grid-gap: 3vh;
+        /* padding-top: 10vh;
+        padding-left: 100px; */
+        padding: 0 1vh 0 1vh;
+    }
+
+    .story-snippet{
+        padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+        /* width: 30%; */
+    }
+}
+
+/* HD screens*/
+@media only screen and (min-width: 1000px) {
+    header {
+        height: 100vh;
+    }
+}
+
+/* 4k Version */
