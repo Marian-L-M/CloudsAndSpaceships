@@ -45,6 +45,9 @@ https://pixabay.com/photos/fantasy-cave-mystical-rock-stone-2750995/
 - Roselin Forest, original image by Free-Photos - Forest Mist Nature
 https://pixabay.com/photos/forest-mist-nature-trees-mystic-931706/
 
+- About section: Photo by Christopher Pluta
+https://pixabay.com/photos/old-newspaper-newspaper-retro-sepia-350376/
+
 @Pexels.com
 @Unsplash.com
 
