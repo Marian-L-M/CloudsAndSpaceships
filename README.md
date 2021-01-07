@@ -49,6 +49,25 @@ https://pixabay.com/photos/forest-mist-nature-trees-mystic-931706/
 https://pixabay.com/photos/old-newspaper-newspaper-retro-sepia-350376/
 
 @Pexels.com
+Section explore
+1. Empty Brown Canvas by Pixabay
+https://www.pexels.com/photo/abstract-ancient-antique-art-235985/
+
+2. https://www.pexels.com/photo/road-dawn-landscape-sunset-5604407/
+Photo by Tobias Bjørkli from Pexels
+
+3. https://www.pexels.com/photo/view-of-mountain-2105416/
+Photo by Anne-sophie Parent from Pexels
+
+4. https://www.pexels.com/photo/adventure-cliffs-climb-clouds-355482/
+Photo by Pixabay
+
+5. https://www.pexels.com/photo/white-and-black-animal-standing-on-green-grass-1557650/
+Photo by Lukas Hartmann from Pexels
+
+6.https://www.pexels.com/photo/gray-concrete-building-on-top-of-hill-1484776/
+Photo by Suliman Sallehi from Pexels
+
 @Unsplash.com
 
 ----------------------------------------------------------------------------------------------------------------------------------

@@ -53,7 +53,27 @@ h1 {
 font-size: 5vw;
 }
 
+h2 {
+    margin: 8px 0;
+    background-color: #23b5b5;
+    width: 100%;
+    padding: 8px;
+}
+
+p {
+    line-height: 2;
+}
+
+.wrapper {
+    max-width: 75%;
+    margin: 0 auto;
+}
+
+/* Section */
+
 /* Contents */
+
+
 
 /* Story Lines*/
 .container {
@@ -183,7 +203,19 @@ font-size: 5vw;
         text-decoration: underline;
     }
 
-/* Contents */
+/* Section */
+    section {
+        padding: 40px;
+        display: flex;
+    }
+
+    section .thumbnail img {
+        height: 400px;
+        padding: 40px 0 0 40px;
+    }
+
+
+    /* Contents */
     .container {
         grid-template-columns: auto auto auto;
         grid-gap: 3vh;
