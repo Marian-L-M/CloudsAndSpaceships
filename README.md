@@ -61,6 +61,24 @@ Logo built using the cottony cloud template.
 - 6. Section Explore Photo by Pexels
      https://pixabay.com/photos/water-architecture-colourful-1283963/
 
+Storylines:
+
+- Rooster in the Basket
+  Image by Clker-Free-Vector-Images
+  https://pixabay.com/users/clker-free-vector-images-3736/
+
+- Growing in Darkness
+  Image by João Cabral
+  https://www.pexels.com/photo/black-and-white-photo-of-man-with-umbrella-3299386/
+
+- Hildegaard
+  Image by SarahRichterArt
+  https://pixabay.com/photos/sunset-panorama-dusk-nature-3084651/
+
+- Syndicates of the Sky Archipelago
+  Image by peter_pyw
+  https://pixabay.com/photos/sunset-panorama-dusk-nature-3084651/
+
 @Pexels.com
 Section explore
 
@@ -99,3 +117,6 @@ by user: Louis de Funes
 https://pixabay.com/users/louis-de-funes-9076487/?tab=videos
 
 @Pexels
+
+7. For the side-scrolling story snippets Glider.js was used. Thanks & Credits go to Nick Piscitelli.
+   https://nickpiscitelli.github.io/Glider.js/
