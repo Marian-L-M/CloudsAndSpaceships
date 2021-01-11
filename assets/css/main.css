@@ -72,10 +72,26 @@ header {
 
 .wrapper {
   max-width: 85%;
-  margin: 0 auto;
+  margin: 0 auto 20px;
 }
 
-/* Nav-bars */
+/* Nav-bar */
+nav {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  max-width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  margin: 0 auto;
+  color: white;
+  transition: all 0.4s;
+}
 
 #logo {
   height: 40px;
@@ -94,6 +110,10 @@ header {
   display: block;
   font-size: 24px;
   cursor: pointer;
+}
+
+nav.scrolled .menu-btn {
+  color: black;
 }
 
 .close-btn {
@@ -145,10 +165,6 @@ header {
   border-top: 1px solid white;
 }
 
-nav.scrolled .menu-btn {
-  color: black;
-}
-
 /* Sections */
 section {
   padding: 1vh 1vh 0 1vh;
@@ -180,12 +196,48 @@ section {
   background-attachment: fixed;
 }
 
+.explore-gallery .active-explore {
+  width: 280px;
+}
+
 .explore-gallery .img-card {
   width: 140px;
 }
 
+.explore-gallery .active-explore img,
 .explore-gallery .img-card img {
   width: 100%;
+  border: 1px solid #ece2d0;
+}
+
+.active-img-desc {
+  position: unset;
+  bottom: 3%;
+  left: 16px;
+  right: 16px;
+  background-color: #1f0318;
+  border: 1px solid #ece2d0;
+  padding: 16px;
+}
+
+.explore-gallery {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.explore-gallery .img-card {
+  margin: 2px;
+  cursor: pointer;
+}
+
+.explore-gallery .img-card img:hover {
+  border-color: rgb(204, 99, 1);
+}
+
+.explore-gallery .img-card .img-desc {
+  display: none;
 }
 
 /* New Story Lines ---------------------------------------------------------------*/
@@ -212,35 +264,83 @@ section {
   font-weight: normal;
 }
 
-/* Contact*/
+/* Contact---------------------------------------------------------------*/
+
+.contact {
+  height: 70vh;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-self: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.contact form input,
+.contact form textarea {
+  padding: 12px;
+  margin: 8px 0;
+  font-family: "Raleway", sans-serif;
+}
+
+.contact form input[type="submit"] {
+  background: rgb(43, 42, 42);
+  color: white;
+  border: 1px outset #f0a202;
+}
+
+/* Footer---------------------------------------------------------------*/
+
+footer {
+  background: black;
+  color: #aaaaaa;
+  text-align: center;
+  padding: 16px;
+}
+
+footer i {
+  transition: all 0.6s;
+}
+
+.social-icons {
+  margin: 16px;
+  font-size: 24px;
+}
+
+.social-icons a {
+  color: #aaaaaa;
+  padding: 15px;
+}
+
+.social-icons .fab.fa-github:hover {
+  color: #f0a202;
+}
+
+.social-icons .fab.fa-youtube:hover {
+  color: #ff0000;
+}
+
+.social-icons .fandom:hover {
+  color: purple;
+}
+
+.social-icons .fandom {
+  font-size: 1.3rem;
+}
+
+/* Smartphone upright--------------------------------------------------------*/
+/* Header */
+@media only screen and (max-width: 400px) {
+}
 
 /* Tablet/Desktop version--------------------------------------------------------*/
-
 /* Header */
 @media only screen and (min-width: 800px) {
-  header {
-    height: 100vh;
-  }
-
-  /* Navbar */
-  nav {
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 16px;
-    max-width: 100%;
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 100;
-    /* background-color: #151d0d; */
-    margin: 0 auto;
-    color: white;
-    transition: all 0.4s;
-  }
-
   nav.scrolled {
     background-color: white;
     height: 40px;
@@ -296,37 +396,27 @@ section {
   } */
 
   /* Explore */
+
   .active-explore {
-    max-width: 50%;
     position: relative;
     margin: 50px auto 50px;
   }
 
+  .explore-gallery .active-explore {
+    width: 50%;
+  }
+
   .active-explore img,
   .explore-gallery .img-card img {
-    width: 100%;
     border: 2px solid #ece2d0;
   }
 
   .active-img-desc {
     position: absolute;
-    bottom: 3%;
-    left: 16px;
-    right: 16px;
-    background-color: #1f0318;
-    border: 1px solid #ece2d0;
-    padding: 16px;
-  }
-
-  .explore-gallery {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
   }
 
   .explore-gallery .img-card {
-    width: 10%;
+    width: 15%;
     margin: 8px;
     cursor: pointer;
   }
@@ -335,97 +425,34 @@ section {
     width: 18%;
   }
 
-  .explore-gallery .img-card img:hover {
-    border-color: rgb(204, 99, 1);
+  /* Contact Form */
+
+  .contact form {
+    width: 50%;
+    margin-top: 50px;
   }
 
-  .explore-gallery .img-card .img-desc {
-    display: none;
+  /* Footer*/
+
+  .social-icons {
+    margin: 16px;
+    font-size: 32px;
   }
-
-  /* Storylines */
-  /* .story-snippet {
-    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-  } */
 }
-
-/* Contact Form */
-
-.contact {
-  flex-direction: column;
-}
-
-.contact form {
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  justify-self: center;
-  width: 50%;
-  margin-top: 50px;
-}
-
-.contact form input,
-.contact form textarea {
-  padding: 12px;
-  margin: 8px 0;
-  font-family: "Raleway", sans-serif;
-}
-
-.contact form input[type="submit"] {
-  background: rgb(43, 42, 42);
-  color: white;
-  border: 1px outset #f0a202;
-}
-
-/* Footer*/
-
-footer {
-  background: black;
-  color: #aaaaaa;
-  text-align: center;
-  padding: 16px;
-}
-
-footer i {
-  transition: all 0.6s;
-}
-
-.social-icons {
-  margin: 16px;
-  font-size: 32px;
-}
-
-.social-icons a {
-  color: #aaaaaa;
-  margin-right: 15px;
-}
-
-.social-icons .fab.fa-github:hover {
-  color: #f0a202;
-}
-
-.social-icons .fab.fa-youtube:hover {
-  color: #ff0000;
-}
-
-.social-icons .fandom:hover {
-  color: purple;
-}
-
-.social-icons .wantedly,
-.social-icons .fandom {
-  font-size: 1.5rem;
-}
-
-.social-icons span {
-  margin-right: 30px;
-}
-
 /* HD screens--------------------------------------------------------*/
-/* @media only screen and (min-width: 1279px) {
-
-} */
+@media only screen and (min-width: 1280px) and (max-width: 1899px) {
+  header {
+    height: 70vh;
+  }
+}
 
 /* 4k screens -------------------------------------------------------- */
-/* @media only screen and (min-width: 3839px) {
-} */
+@media only screen and (min-width: 1900px) {
+  .wrapper {
+    max-width: 1800px;
+  }
+
+  header {
+    height: 100vh;
+  }
+}
