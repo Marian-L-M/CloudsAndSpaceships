@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap");
 
 /* Main CSS files for Clouds and Spaceships */
-/* Mobile first methodology */
+/* Mobile first */
 
 /* For mobile*/
 * {
@@ -12,6 +12,7 @@
 
 html {
   font-size: 100%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -41,6 +42,16 @@ p {
   line-height: 2;
 }
 
+a:-webkit-any-link {
+  color: #aaaaaa;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f0a202;
+  text-decoration: none;
+}
+
 /* Header */
 header {
   height: 30vh;
@@ -64,6 +75,80 @@ header {
   margin: 0 auto;
 }
 
+/* Nav-bars */
+
+#logo {
+  height: 40px;
+}
+
+#logo img {
+  height: 100%;
+}
+
+#nav-btns {
+  display: none;
+}
+
+.menu-btn,
+.close-btn {
+  display: block;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.close-btn {
+  display: none;
+}
+
+.mobile-nav {
+  display: flex;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 500px;
+  left: 0;
+  align-items: center;
+  justify-self: center;
+  background: black;
+  flex-direction: column;
+  padding: 0;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.mobile-nav.active {
+  opacity: 1;
+  top: 0;
+  pointer-events: auto;
+}
+
+.mobile-nav li {
+  margin: 16px 8px;
+}
+
+.mobile-nav span {
+  margin-left: 10px;
+}
+
+.mobile-nav li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  position: relative;
+}
+
+.mobile-nav li a:before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  top: -12px;
+  border-top: 1px solid white;
+}
+
+nav.scrolled .menu-btn {
+  color: black;
+}
+
 /* Sections */
 section {
   padding: 1vh 1vh 0 1vh;
@@ -72,6 +157,19 @@ section {
 /* Contents */
 
 /* About */
+
+#about {
+  flex-direction: column;
+  align-items: center;
+}
+
+#about .thumbnail {
+  height: 200px;
+}
+
+#about .thumbnail img {
+  height: 100%;
+}
 
 /* Explore */
 #explore {
@@ -82,64 +180,18 @@ section {
   background-attachment: fixed;
 }
 
-/* Story Lines */
-/* .container {
-  display: grid;
-  justify-content: center;
-  grid-template-columns: auto;
-  gap: 3vh;
-  padding: 5vh 1vh 0 1vh;
+.explore-gallery .img-card {
+  width: 140px;
 }
 
-.story-snippet {
-  background-color: #d95d39;
-  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-  border: 2px groove #f0a202;
-  border-radius: 2%;
+.explore-gallery .img-card img {
   width: 100%;
 }
-
-.story-snippet > p {
-  display: flex;
-  align-content: center;
-}
-
-.story-snippet:hover {
-  background-color: #be4d2e;
-} */
-
-/* .story-snippet:first-child{} */
-/* .story-snippet:last-child{} */
-
-/* .story-snippet::after {
-    content: 'Thank you for reading!';
-    font-size: 2em;
-    font-weight: 300;
-} */
-/* 
-.story-snippet h2 {
-  background-color: #925505;
-  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-  border: 1px outset #f0a202;
-  border-radius: 2%;
-}
-
-.story-snippet p {
-  padding: 1.5rem 1.5rem 1.5rem 1.5rem;
-}
-
-.story-snippet p::first-line {
-  font-size: 1.2rem;
-  color: #341c1c;
-}
-.story-snippet p::first-letter {
-  font-family: "MedievalSharp", cursive;
-  font-size: 2rem;
-} */
 
 /* New Story Lines ---------------------------------------------------------------*/
 .storylines {
   flex-direction: column;
+  align-items: center;
 }
 
 .story-snippet {
@@ -167,18 +219,10 @@ section {
 /* Header */
 @media only screen and (min-width: 800px) {
   header {
-    height: 65vh;
+    height: 100vh;
   }
 
   /* Navbar */
-  #logo {
-    height: 40px;
-  }
-
-  #logo img {
-    height: 100%;
-  }
-
   nav {
     height: 60px;
     display: flex;
@@ -193,6 +237,7 @@ section {
     z-index: 100;
     /* background-color: #151d0d; */
     margin: 0 auto;
+    color: white;
     transition: all 0.4s;
   }
 
@@ -222,8 +267,14 @@ section {
   }
 
   #nav-btns a:hover {
-    color: plum;
-    text-decoration: underline;
+    color: #f0a202;
+    text-decoration: none;
+  }
+
+  .menu-btn,
+  .close-btn,
+  .mobile-nav {
+    display: none;
   }
 
   /* Section */
@@ -298,13 +349,83 @@ section {
   } */
 }
 
-/* HD screens--------------------------------------------------------*/
-@media only screen and (min-width: 1279px) {
-  header {
-    height: 100vh;
-  }
+/* Contact Form */
+
+.contact {
+  flex-direction: column;
 }
 
-/* 4k screens -------------------------------------------------------- */
-@media only screen and (min-width: 3839px) {
+.contact form {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-self: center;
+  width: 50%;
+  margin-top: 50px;
 }
+
+.contact form input,
+.contact form textarea {
+  padding: 12px;
+  margin: 8px 0;
+  font-family: "Raleway", sans-serif;
+}
+
+.contact form input[type="submit"] {
+  background: rgb(43, 42, 42);
+  color: white;
+  border: 1px outset #f0a202;
+}
+
+/* Footer*/
+
+footer {
+  background: black;
+  color: #aaaaaa;
+  text-align: center;
+  padding: 16px;
+}
+
+footer i {
+  transition: all 0.6s;
+}
+
+.social-icons {
+  margin: 16px;
+  font-size: 32px;
+}
+
+.social-icons a {
+  color: #aaaaaa;
+  margin-right: 15px;
+}
+
+.social-icons .fab.fa-github:hover {
+  color: #f0a202;
+}
+
+.social-icons .fab.fa-youtube:hover {
+  color: #ff0000;
+}
+
+.social-icons .fandom:hover {
+  color: purple;
+}
+
+.social-icons .wantedly,
+.social-icons .fandom {
+  font-size: 1.5rem;
+}
+
+.social-icons span {
+  margin-right: 30px;
+}
+
+/* HD screens--------------------------------------------------------*/
+/* @media only screen and (min-width: 1279px) {
+
+} */
+
+/* 4k screens -------------------------------------------------------- */
+/* @media only screen and (min-width: 3839px) {
+} */

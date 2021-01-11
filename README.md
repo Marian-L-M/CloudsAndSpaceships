@@ -120,3 +120,6 @@ https://pixabay.com/users/louis-de-funes-9076487/?tab=videos
 
 7. For the side-scrolling story snippets Glider.js was used. Thanks & Credits go to Nick Piscitelli.
    https://nickpiscitelli.github.io/Glider.js/
+
+Overall thanks to Mr. Godson Thomas on Skillshare for providing the guidance for the development of this page:
+https://www.skillshare.com/classes/Design-A-Complete-Responsive-Website-From-Scratch-Using-HTML5-CSS-JS-Beginners-Guide/1485856778

@@ -4,33 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
     <link href="./assets/css/main.css" rel="stylesheet" />
     <link href="./assets/css/glider.min.css" rel="stylesheet" />
-    <meta
-      name="description"
-      content="Clouds and Spaceship. An online epic fantasy tale, blending animated Youtube stories with an extensive Wiki for backreading."
+    <meta name="description" content="Clouds and Spaceship. Epic fantasy redesigned."
     />
-    <script
-      src="https://kit.fontawesome.com/789b413aa4.js"
-      crossorigin="anonymous"
+    <script src="https://kit.fontawesome.com/789b413aa4.js" crossorigin="anonymous"
     ></script>
     <title>Eternity of Magic</title>
   </head>
   <body>
-    <nav class="scrolled">
+    <nav>
       <div id="logo">
-        <a href="https://eternityofmagic.com">
+        <a href="#">
           <img src="./assets/icons/cns_logo_draft.png" alt="EOM Logo" />
         </a>
       </div>
+
       <div>
         <ul id="nav-btns">
           <li><a href="#about">Info</a></li>
           <li><a href="#explore">Explore</a></li>
-          <li><a href="#contents">Storylines</a></li>
+          <li><a href="#storylines">Storylines</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
+
+      <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+
+      <div class="close-btn">
+        <i class="fas fa-times"></i>
+      </div>
+
+      <ul class="mobile-nav">
+        <li><a href="#about"><i class="fas fa-info-circle"><span>Info</span></i></a></li>
+        <li><a href="#explore"><i class="fas fa-globe"><span>Explore</span></i></a></li>
+        <li><a href="#storylines"><i class="fas fa-book"><span>Storylines</span></i></a></li>
+        <li><a href="#contact"><i class="fas fa-envelope"><span>Contact</span></i></a></li>
+      </ul>
+      
     </nav>
     <!--Header-->
     <header>
@@ -141,7 +155,7 @@
     <!--Exploration Map End-->
     <!--Storylines-->
     <div class="wrapper">
-        <section class="storylines">
+        <section id="storylines" class="storylines">
             <h2>Storylines</h2>
             <div class="glider-contain">
                 <div class="glider">
@@ -216,12 +230,33 @@
     </div>
     <!--Storylines End-->
     <!--Contact Form-->
-    <section id="contact">
-      <div class="wrapper">
+    <div class="wrapper">
+      <section id ="contact" class="contact">
         <h2>Contact</h2>
-      </div>
-    </section>
+        <form>
+          <input type="text" placeholder="Name">
+          <input type="text" placeholder="Email">
+          <textarea cols="30" rows="10" placeholder="Message"></textarea>
+          <input type="submit" value="Send">
+        </form>
+      </section>
+    </div>
     <!--Contact Form End-->
+    <!--Footer-->
+
+    <footer>
+      <div class="social">
+        <div class="social-icons">
+          <a href="https://github.com/Marian-L-M/CloudsAndSpaceships"></a><i class="fab fa-github"></i></a>
+          <a href="https://www.youtube.com/channel/UCKDuRjaYhb4UWN3QNYEC_Ig"><i class="fab fa-youtube"></i></a>
+          <a href="https://eternityofmagic.fandom.com/wiki/An_Eternity_of_Magic_Wiki"><i class="fandom">Fandom</i></a>
+
+      </div>
+      <p>Website designed & developed by <a href="www.marian-maschke.com">Marian Maschke</a></p>
+    </footer>
+
+    <!--Footer End-->
+
     <script src="./assets/js/main.js"></script>
     <script src="./assets/js/glider.min.js"></script>
 
