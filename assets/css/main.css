@@ -27,7 +27,7 @@ h2 {
 }
 
 h1 {
-  font-size: 5vw;
+  font-size: 7vw;
 }
 
 h2 {
@@ -80,8 +80,8 @@ nav {
   height: 60px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 16px;
+  /* align-items: center; */
+  padding: 4px;
   max-width: 100%;
   position: fixed;
   top: 0;
@@ -94,7 +94,8 @@ nav {
 }
 
 #logo {
-  height: 40px;
+  top: 0;
+  height: 30px;
 }
 
 #logo img {
@@ -113,47 +114,51 @@ nav {
 }
 
 nav.scrolled .menu-btn {
-  color: black;
+  color: #f0a202;
 }
 
 .close-btn {
   display: none;
+  z-index: 1000;
 }
 
 .mobile-nav {
   display: flex;
   position: fixed;
-  height: 100%;
-  width: 100%;
-  top: 500px;
-  left: 0;
+  height: 98%;
+  width: 98%;
   align-items: center;
-  justify-self: center;
-  background: black;
+  justify-content: center;
+  background: #3f3f3f;
   flex-direction: column;
   padding: 0;
   pointer-events: none;
   opacity: 0;
+  transition: all 0.6s;
+  border: olive solid 5px;
 }
 
 .mobile-nav.active {
-  opacity: 1;
-  top: 0;
+  opacity: 0.98;
+  top: 1%;
+  left: 1%;
   pointer-events: auto;
 }
 
 .mobile-nav li {
   margin: 16px 8px;
+  list-style: none;
 }
 
 .mobile-nav span {
   margin-left: 10px;
+  font-family: "Copperplat", fantasy, serif;
 }
 
 .mobile-nav li a {
   color: white;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 36px;
   position: relative;
 }
 
@@ -167,7 +172,7 @@ nav.scrolled .menu-btn {
 
 /* Sections */
 section {
-  padding: 1vh 1vh 0 1vh;
+  padding: 1vh 2vh 0 2vh;
 }
 
 /* Contents */
@@ -341,6 +346,15 @@ footer i {
 /* Tablet/Desktop version--------------------------------------------------------*/
 /* Header */
 @media only screen and (min-width: 800px) {
+  h1 {
+    font-size: 5vw;
+  }
+
+  nav {
+    align-items: center;
+    padding: 16px;
+  }
+
   nav.scrolled {
     background-color: white;
     height: 40px;
@@ -369,6 +383,10 @@ footer i {
   #nav-btns a:hover {
     color: #f0a202;
     text-decoration: none;
+  }
+
+  #logo {
+    height: 40px;
   }
 
   .menu-btn,

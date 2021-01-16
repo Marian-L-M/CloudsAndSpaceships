@@ -4,6 +4,43 @@ const images = document.querySelectorAll(".img-card img");
 
 const nav = document.querySelector("nav");
 
+const menuBtn = document.querySelector(".menu-btn");
+const closeBtn = document.querySelector(".close-btn");
+const mobileNav = document.querySelector(".mobile-nav");
+
+const mobileNavLinks = document.querySelectorAll(".mobile-nav a");
+
+//Mobile Nav
+//Opening mobile menu
+menuBtn.addEventListener ("click", function() {
+    mobileNav.classList.add("active");
+    closeBtn.style.display = "block";
+    menuBtn.style.display = "none";
+})
+
+//Closing mobile menu
+closeBtn.addEventListener ("click", function() {
+    mobileNav.classList.remove("active");
+    menuBtn.style.display = "block";
+    closeBtn.style.display = "none";
+})
+
+// mobileNav.addEventListener ("click", function() {
+//     mobileNav.classList.remove("active");
+//     menuBtn.style.display = "block";
+//     closeBtn.style.display = "none";
+// })
+
+// Mobile Nav Menu Links
+
+mobileNavLinks.forEach(link => (link.addEventListener("click", 
+function(){
+    mobileNav.classList.remove("active");
+    menuBtn.style.display = "block";
+    closeBtn.style.display = "none";
+
+})))
+
 //Eventlisteners for images
 
 images.forEach(image => (image.addEventListener("click", changeImage)));
