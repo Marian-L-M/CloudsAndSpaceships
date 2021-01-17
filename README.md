@@ -4,6 +4,13 @@ A website to collect the epic fantasy projects written and devised by Marian Mas
 
 Page was built using mobile first methology
 
+## Deployment
+
+Deployed using Hostinger.
+URL: www.eternityofmagic.com
+
+Automatic deployment using Github Webhooks
+
 ## For creation of the website the following resources where implemented:
 
 1. Color Palette
