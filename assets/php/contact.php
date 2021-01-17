@@ -19,14 +19,14 @@ $mail_status = mail($mail_to, $subject, $body_message, $headers);
 if ($mail_status) { ?>
 	<script language="javascript" type="text/javascript">
 		alert('Thank you for the message. We will contact you shortly.');
-		window.location = 'contact_page.html';
+		window.location = 'index.html';
 	</script>
 <?php
 }
 else { ?>
 	<script language="javascript" type="text/javascript">
-		alert('Message failed. Please, send an email to gordon@template-help.com');
-		window.location = 'contact_page.html';
+		alert('Message failed. Please, send an email to marian.maschke@yahoo.com');
+		window.location = 'index.html';
 	</script>
 <?php
 }
