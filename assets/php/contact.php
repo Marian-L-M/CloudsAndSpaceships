@@ -25,7 +25,7 @@ if ($mail_status) { ?>
 }
 else { ?>
 	<script language="javascript" type="text/javascript">
-		alert('Message failed. Please, send an email to marian.maschke@yahoo.com');
+		alert('Message failed. Please send an email to marian.maschke@yahoo.com');
 		window.location = '../../index.html';
 	</script>
 <?php
