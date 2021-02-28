@@ -60,6 +60,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  background: linear-gradient(0deg, #0c013d88 30%, #ffffff44 100%);
 }
 
 .main-video {
@@ -267,6 +268,15 @@ section {
 .storylines h3 {
   margin: 8px;
   font-weight: normal;
+}
+
+.story-snippet > button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: none;
+  border: none;
+  color: #03923f;
+  font-weight: bolder;
 }
 
 /* Contact---------------------------------------------------------------*/
