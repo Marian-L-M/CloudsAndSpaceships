@@ -260,8 +260,9 @@ section {
 }
 
 .story-snippet img {
-  width: 300px;
-  border-radius: 45%;
+  max-width: 60%;
+  max-height: 500px;
+  border-radius: 2%;
   margin: 24px;
 }
 
@@ -277,6 +278,10 @@ section {
   border: none;
   color: #03923f;
   font-weight: bolder;
+}
+
+.fulltext {
+  margin-top: 50px;
 }
 
 /* Contact---------------------------------------------------------------*/
