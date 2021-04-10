@@ -81,7 +81,6 @@ nav {
   height: 60px;
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
   padding: 4px;
   max-width: 100%;
   position: fixed;
@@ -203,7 +202,7 @@ section {
 }
 
 .explore-gallery .active-explore {
-  width: 280px;
+  width: 284px;
 }
 
 .explore-gallery .img-card {
@@ -473,12 +472,108 @@ footer i {
   }
 }
 /* HD screens--------------------------------------------------------*/
-@media only screen and (min-width: 1280px) and (max-width: 1899px) {
+@media only screen and (min-width: 1280px) {
   header {
     height: 70vh;
   }
-}
 
+  /* Explore Grid ------------------------------------------------------*/
+
+  .explore-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+
+  .explore-gallery h2 {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  #ele-1 {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 4;
+  }
+
+  .active-explore {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+
+  #ele-2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  #ele-3 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+
+  #ele-4 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+
+  #ele-5 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+
+  #ele-6 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+
+  #ele-7 {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+
+  #ele-8 {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+
+  #ele-9 {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+
+  #ele-10 {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  .explore-gallery .img-card,
+  .active-explore {
+    width: 100%;
+  }
+}
 /* 4k screens -------------------------------------------------------- */
 @media only screen and (min-width: 1900px) {
   .wrapper {
