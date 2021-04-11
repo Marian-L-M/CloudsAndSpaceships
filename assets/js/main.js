@@ -8,6 +8,9 @@ const menuBtn = document.querySelector(".menu-btn");
 const closeBtn = document.querySelector(".close-btn");
 const mobileNav = document.querySelector(".mobile-nav");
 
+const dropDown = document.querySelector(".dropdown");
+const dropDownContent = document.querySelector(".dropdown-content")
+
 const mobileNavLinks = document.querySelectorAll(".mobile-nav a");
 
 //Mobile Nav
@@ -24,6 +27,26 @@ closeBtn.addEventListener ("click", function() {
     menuBtn.style.display = "block";
     closeBtn.style.display = "none";
 })
+
+//Dropdown Menu
+dropDown.addEventListener("mouseover", function(){
+    dropDownContent.style.display = "block";
+});
+
+dropDown.addEventListener("click", function(){
+    dropDownContent.style.display = "none";
+});
+
+dropDownContent.addEventListener("click", function(){
+    dropDownContent.style.display = "none";
+    }
+);
+
+dropDownContent.addEventListener("mouseout", function(){
+    setTimeout( function(){dropDownContent.style.display = "none";}, 10000)
+    }
+);
+
 
 // mobileNav.addEventListener ("click", function() {
 //     mobileNav.classList.remove("active");
