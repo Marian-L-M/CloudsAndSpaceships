@@ -28,31 +28,14 @@ closeBtn.addEventListener ("click", function() {
     closeBtn.style.display = "none";
 })
 
-//Dropdown Menu
-dropDown.addEventListener("mouseover", function(){
-    dropDownContent.style.display = "block";
-});
-
-dropDown.addEventListener("click", function(){
-    dropDownContent.style.display = "none";
-});
-
-dropDownContent.addEventListener("click", function(){
-    dropDownContent.style.display = "none";
-    }
-);
-
-dropDownContent.addEventListener("mouseout", function(){
-    setTimeout( function(){dropDownContent.style.display = "none";}, 10000)
-    }
-);
+/* Close menu by clicking grey area*/
+mobileNav.addEventListener ("click", function() {
+    mobileNav.classList.remove("active");
+    menuBtn.style.display = "block";
+    closeBtn.style.display = "none";
+})
 
 
-// mobileNav.addEventListener ("click", function() {
-//     mobileNav.classList.remove("active");
-//     menuBtn.style.display = "block";
-//     closeBtn.style.display = "none";
-// })
 
 // Mobile Nav Menu Links
 
@@ -61,9 +44,8 @@ function(){
     mobileNav.classList.remove("active");
     menuBtn.style.display = "block";
     closeBtn.style.display = "none";
-
+    
 })))
-
 //Eventlisteners for images
 
 images.forEach(image => (image.addEventListener("click", changeImage)));
