@@ -8,6 +8,7 @@
   --main-font: clamp(1rem, 2.5vw, 2rem);
 
   /* Colors */
+  --cl-bg-main: hsl(95, 100%, 3%);
   --cl-contrast-1: hsl(194, 88%, 6%);
   --cl-decoration-1: hsl(34, 93%, 30%);
   --cl-decoration-2: hsl(40, 98%, 47%);
@@ -16,6 +17,9 @@
   --cl-sp-text: hsl(39, 42%, 87%);
 
   --st-border: 1px outset #f0a202;
+
+  /* Animations */
+  --st-trans: all 0.4s;
 }
 
 /* Mobile first */
@@ -32,7 +36,7 @@ html {
 }
 
 body {
-  background-color: #02181f;
+  background: url(../Images/bg_vine_pattern.jpg) var(--cl-bg-main);
   color: var(--cl-st-text);
   font-family: "Lora", serif;
 }
@@ -44,7 +48,7 @@ h2 {
 
 h1 {
   font-size: clamp(3rem, 7vw, 7rem);
-  padding: 0 2rem 0 2rem;
+  padding: 2.5rem 2rem 0 2rem;
 }
 
 h2 {
@@ -56,8 +60,8 @@ h2 {
 }
 
 h3 {
-  font-size: clamp(1.5rem, 7vw, 3.5rem);
-  padding: 0 5rem 0 5rem;
+  font-size: clamp(0.8rem, 4vw, 2.5rem);
+  padding: 0 3rem 1rem 5rem;
   color: var(--cl-st-text);
 }
 
@@ -77,7 +81,7 @@ a:hover {
 
 /* Header */
 header {
-  height: 30vh;
+  height: 100vh;
   overflow: hidden;
   position: relative;
   display: flex;
@@ -111,13 +115,12 @@ nav {
   padding: 4px;
   max-width: 100%;
   position: fixed;
-  top: 0;
   right: 0;
   left: 0;
   z-index: 100;
   margin: 0 auto;
   color: white;
-  transition: all 0.4s;
+  transition: var(--st-trans);
 }
 
 #logo {
@@ -166,7 +169,7 @@ nav.scrolled .menu-btn {
   padding: 0;
   pointer-events: none;
   opacity: 0;
-  transition: all 0.6s;
+  transition: var(--st-trans);
   border: rgb(241, 241, 241, 0.2) groove 2px;
 }
 
@@ -257,11 +260,11 @@ section {
 }
 
 /* Explore */
+
 #explore {
   background: url(../Images/1.jpg) var(--cl-decoration-2);
   background-size: cover;
   background-position: center;
-  /* height: 100vh; */
   background-attachment: fixed;
 }
 
@@ -387,7 +390,7 @@ footer {
 }
 
 footer i {
-  transition: all 0.6s;
+  transition: var(--st-trans);
 }
 
 .social-icons {
@@ -677,5 +680,14 @@ footer i {
 
   header {
     height: 100vh;
+  }
+
+  #logo {
+    height: 60px;
+  }
+
+  .scrolled #logo {
+    height: 40px;
+    transition: var(--st-trans);
   }
 }
