@@ -359,7 +359,7 @@ footer {
   background: black;
   color: #aaaaaa;
   text-align: center;
-  padding: 16px;
+  padding: 6px;
 }
 
 footer i {
@@ -367,13 +367,13 @@ footer i {
 }
 
 .social-icons {
-  margin: 16px;
+  margin: 6px;
   font-size: 24px;
 }
 
 .social-icons a {
   color: #aaaaaa;
-  padding: 15px;
+  padding: 5px;
 }
 
 .social-icons .fab.fa-facebook:hover {
@@ -396,8 +396,20 @@ footer i {
   color: purple;
 }
 
-.social-icons .fandom {
-  font-size: 1.3rem;
+.social-icons .deviantart:hover {
+  color: #00c787;
+}
+
+.social-icons .fab.fa-instagram:hover {
+  color: #ddb1ec;
+}
+
+.social-icons .fandom,
+.social-icons .deviantart {
+  font-size: 1.2rem;
+  font-family: var(--ft-header);
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 /* Smartphone upright--------------------------------------------------------*/
@@ -587,7 +599,7 @@ footer i {
   /* Footer*/
 
   .social-icons {
-    margin: 16px;
+    margin: 6px;
     font-size: 32px;
   }
 }
