@@ -46,6 +46,7 @@ function(){
     closeBtn.style.display = "none";
     
 })))
+
 //Eventlisteners for images
 
 images.forEach(image => (image.addEventListener("click", changeImage)));

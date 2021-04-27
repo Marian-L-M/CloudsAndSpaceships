@@ -16,6 +16,15 @@
     />
     <meta name="author" content="Eugene Jonathan" />
     <title>Eternity of Magic</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CQCR7GM4LV"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-CQCR7GM4LV');
+  </script>
   </head>
   <body>
     <nav>
@@ -174,17 +183,15 @@
           </div>
         </section>
         <section id="mobile-explore">
+          <h2>Explore the Realm!</h2>
+          <div class="active-explore" id="ele-1">
+            <img src="assets/Images/northeast_ref_v01.jpg" alt="Map of the Northeast" />
+            <div class="active-img-desc">
+              1. The Northeast. A deeply troubled land, struggling to revive its former splendor.
+            </div>
+          </div>
           <div class="glider-contain">
-            <h2>Explore the Realm!</h2>
             <div class="mobile-explore-gallery mobile-glider">
-              <div class="active-explore" id="ele-1">
-                <img src="assets/Images/northeast_ref_v01.jpg" alt="Map of the Northeast" />
-                <div class="active-img-desc">
-                  1. The Northeast. A deeply troubled land, struggling to revive its former splendor.
-                </div>
-              </div>
-
-
               <div class="img-card"  id="ele-2">
                 <img src="assets/Images/TowerMason.jpg" alt="The old capital of the Stone Mason People." />
                 <div class="img-desc">
@@ -421,7 +428,7 @@
     <script>
       new Glider(document.querySelector(".mobile-glider"),
         {
-          slidesToShow: 1,
+          slidesToShow: 3,
           dots: "#mobile-dots",
           arrows: {
             prev: ".mobile-glider-prev",
