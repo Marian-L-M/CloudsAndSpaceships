@@ -305,6 +305,11 @@ section {
   padding: 16px;
 }
 
+.img-card,
+.story-snippet {
+  margin-right: 3vw;
+}
+
 /* New Story Lines ---------------------------------------------------------------*/
 .storylines {
   flex-direction: column;
@@ -531,6 +536,10 @@ footer i {
   /* Explore */
   #mobile-explore {
     display: none;
+  }
+
+  .wide {
+    padding: 40px;
   }
 
   #explore {
