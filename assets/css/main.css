@@ -521,6 +521,57 @@ footer i {
     align-self: flex-start;
   }
 
+  /* Cookie Disclaimer*/
+
+  .cookie-disclaimer {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    height: 10vh;
+    min-height: 100px;
+    width: 98vw;
+    right: 1vw;
+    left: 1vw;
+    bottom: 1vh;
+    z-index: 1001;
+    background-color: var(--cl-st-text);
+    border: var(--st-border);
+    opacity: 90%;
+  }
+
+  .cookie-disclaimer {
+    color: black;
+    font-size: 1.2rem;
+  }
+
+  .cookie-disclaimer button {
+    justify-self: flex-end;
+    max-height: 50%;
+    min-width: 10vw;
+    border: var(--st-border);
+    margin-right: 15px;
+    margin-top: 3vh;
+  }
+
+  .cookie-disclaimer button:hover {
+    background-color: var(--cl-contrast-2);
+    color: var(--cl-st-text);
+  }
+
+  .cookie-disclaimer i {
+    margin-right: 5vw;
+    margin-top: 3vh;
+  }
+  .cookie-disclaimer i a {
+    color: var(--cl-decoration-1);
+  }
+
+  .cookie-disclaimer i a:hover {
+    color: var(--cl-decoration-2);
+  }
+
   /* Contents */
   /* .container {
     grid-template-columns: auto auto auto;
