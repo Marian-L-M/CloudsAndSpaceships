@@ -11,6 +11,7 @@
   --cl-bg-main: hsl(95, 100%, 3%);
   --cl-contrast-1: hsl(194, 88%, 6%);
   --cl-contrast-2: hsl(315, 82%, 7%);
+  --cl-contrast-light: hsl(0, 0%, 67%);
   --cl-decoration-1: hsl(34, 93%, 30%);
   --cl-decoration-2: hsl(40, 98%, 47%);
 
@@ -87,7 +88,7 @@ p {
 }
 
 a:-webkit-any-link {
-  color: #aaaaaa;
+  color: var(--cl-contrast-light);
   text-decoration: none;
 }
 
