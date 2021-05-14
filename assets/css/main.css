@@ -598,6 +598,40 @@ footer i {
     display: unset;
   }
 
+  .tooltip {
+  position: relative;
+  display: inline-block;
+  }
+
+  .tooltip .tooltip-text {
+    visibility: hidden;
+    background-color: rgb(0, 0, 0, 0.8);
+    color: whitesmoke;
+    text-align: center;
+    border-radius: 6px;
+    padding: 1rem 1rem 1rem 1rem;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .active-explore .tooltip-text {
+    width: 100%;
+    top: 3.5rem;
+    left: 0;
+  }
+
+  .tooltip .tooltiptext::after {
+    position: absolute;
+    bottom: 100%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+  }
+
+  .tooltip:hover .tooltip-text {
+    visibility: visible;
+  } 
+
   .explore-gallery .active-explore {
     width: 284px;
   }
