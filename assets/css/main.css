@@ -24,6 +24,10 @@
   --ft-main: "Lora", serif;
   --ft-header: "Copperplat", fantasy, serif;
 
+  /* Spacing */
+
+  --pd-standard: 40px;
+
   /* Animations */
   --st-trans: all 0.4s;
 }
@@ -42,7 +46,8 @@ html {
 }
 
 body {
-  background: url(../Images/bg_vine_pattern.jpg) var(--cl-bg-main);
+  background: url(../Images/planet_bg_clean.jpg) bottom center repeat
+    var(--cl-bg-main);
   color: var(--cl-st-text);
   font-family: var(--ft-main);
 }
@@ -117,7 +122,7 @@ header {
 }
 
 .wrapper {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(209, 207, 207, 0.2);
   max-width: 100%;
   margin: 0 auto 20px;
 }
@@ -254,7 +259,9 @@ nav.scrolled .menu-btn {
 
 /* Sections */
 section {
-  padding: 1vh 2vh 0 2vh;
+  padding: 1vh 1vh 1vh 1vh;
+  margin-top: var(--pd-standard);
+  margin-bottom: var(--pd-standard);
 }
 
 /* Contents */
@@ -451,8 +458,7 @@ footer i {
   }
 
   h4 {
-    font-size: 2.5rem;
-    margin-left: 20vw;
+    font-size: 1.5rem;
   }
 
   nav {
@@ -462,7 +468,7 @@ footer i {
 
   nav.scrolled {
     background-color: white;
-    height: 40px;
+    height: var(--pd-standard);
     box-shadow: 0 4px 10px -1px rgba(0, 0, 0, 0.75);
   }
 
@@ -497,7 +503,7 @@ footer i {
   }
 
   #logo {
-    height: 40px;
+    height: var(--pd-standard);
   }
 
   .menu-btn,
@@ -508,13 +514,12 @@ footer i {
 
   /* Section */
   section {
-    padding: 40px;
     display: flex;
   }
 
   section .thumbnail img {
     height: 400px;
-    padding: 40px 0 0 40px;
+    padding: var(--pd-standard) 0 0 var(--pd-standard);
   }
 
   /* Landing */
@@ -591,7 +596,7 @@ footer i {
   }
 
   .wide {
-    padding: 40px;
+    padding-top: var(--pd-standard);
   }
 
   #explore {
@@ -599,8 +604,8 @@ footer i {
   }
 
   .tooltip {
-  position: relative;
-  display: inline-block;
+    position: relative;
+    display: inline-block;
   }
 
   .tooltip .tooltip-text {
@@ -613,7 +618,7 @@ footer i {
     position: absolute;
     z-index: 1;
   }
-  
+
   .active-explore .tooltip-text {
     width: 100%;
     top: 100%;
@@ -640,7 +645,7 @@ footer i {
 
   .tooltip:hover .tooltip-text {
     visibility: visible;
-  } 
+  }
 
   .explore-gallery .active-explore {
     width: 284px;
@@ -848,7 +853,7 @@ footer i {
   }
 
   .scrolled #logo {
-    height: 40px;
+    height: var(--pd-standard);
     transition: var(--st-trans);
   }
 }
