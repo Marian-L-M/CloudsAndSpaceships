@@ -110,7 +110,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(0deg, #0c013d88 30%, #ffffff44 100%);
+  background: linear-gradient(90deg, #3f356b88 1%, #50923c44 100%);
 }
 
 #landing {
@@ -348,20 +348,19 @@ section {
   margin-bottom: 20px;
   background: none;
   border: none;
-  color: #03923f;
+  color: var(--cl-decoration-2);
   font-weight: bolder;
+  cursor: pointer;
 }
 
 .fulltext {
-  margin-top: 50px;
+  margin-top: var(--pd-standard);
 }
 
 /* Contact---------------------------------------------------------------*/
 
 .contact {
-  height: 70vh;
   flex-direction: column;
-  margin-top: 30px;
 }
 
 .contact form {
@@ -383,7 +382,13 @@ section {
 .contact form input[type="submit"] {
   background: rgb(43, 42, 42);
   color: white;
-  border: 1px outset #f0a202;
+  border: 1px outset var(--cl-decoration-2);
+}
+
+.contact form input[type="submit"]:hover {
+  background-color: var(--cl-decoration-1);
+  border: 1px outset var(--cl-contrast-2);
+  cursor: pointer;
 }
 
 /* Footer---------------------------------------------------------------*/
@@ -454,7 +459,7 @@ footer i {
 /* Header */
 @media only screen and (min-width: 800px) {
   h1 {
-    font-size: 5vw;
+    font-size: 7vw;
   }
 
   h4 {
@@ -596,7 +601,7 @@ footer i {
   }
 
   .wide {
-    padding-top: var(--pd-standard);
+    padding: var(--pd-standard) 0 var(--pd-standard) 0;
   }
 
   #explore {
@@ -742,7 +747,9 @@ footer i {
     grid-column-end: 6;
     grid-row-start: 1;
     grid-row-end: 2;
-    width: 100%;
+    display: flex;
+    justify-self: center;
+    width: 99%;
     max-height: 50px;
   }
 

@@ -85,7 +85,7 @@
 .mobile-glider-prev:hover,
 .mobile-glider-next:focus,
 .mobile-glider-next:hover {
-  color: #ccc;
+  color: hsl(40, 98%, 47%);
 }
 .glider-next,
 .mobile-glider-next {
@@ -126,7 +126,7 @@
   background: #ddd;
 }
 .glider-dot.active {
-  background: #a89cc8;
+  background: hsl(40, 98%, 47%);
 }
 @media (max-width: 36em) {
   .glider::-webkit-scrollbar {
@@ -141,5 +141,13 @@
     background-color: rgba(156, 156, 156, 0.25);
     -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.25);
     box-shadow: 0 0 1px rgba(255, 255, 255, 0.25);
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .fa-chevron-left,
+  .fa-chevron-right {
+    font-size: 5rem;
+    padding: 0 2vw 0 2vw;
   }
 }
