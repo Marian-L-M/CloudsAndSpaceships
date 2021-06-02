@@ -1,0 +1,11 @@
+.center-map {
+    margin-top: 50px;
+    display: flex;
+    height: 100%;
+    align-content: center;
+    justify-content: center;
+}
+
+.center-map img {
+    width: 70%;
+}
