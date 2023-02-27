@@ -4,7 +4,7 @@ $field_subject = $_POST['cf_subject'];
 $field_email = $_POST['cf_email'];
 $field_message = $_POST['cf_message'];
 
-$mail_to = 'marian.maschke@yahoo.com';
+$mail_to = 'abc@testmail.com';
 $subject = 'Message from a site visitor (EOM). Subject: '.$field_subject;
 
 $body_message = 'From: '.$field_name."\n";
